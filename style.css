@@ -1,0 +1,128 @@
+/* Базовые сбросы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111; /* Фон вокруг мобильной версии на больших экранах */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Контейнер мобильного сайта */
+.mobile-container {
+    width: 100%;
+    max-width: 480px; /* Ограничение ширины для ПК, на телефоне займет 100% */
+    background-color: #fff;
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Каждый блок */
+.block {
+    width: 100%;
+    line-height: 0; /* Убирает лишние отступы под картинками */
+}
+
+/* Картинки на всю ширину, высота адаптируется под пропорции */
+.block img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Блок ссылок (чтобы ссылка охватывала всю картинку) */
+.block a {
+    display: block;
+    width: 100%;
+}
+
+/* Стили для анкеты (Блок 7) */
+.form-block {
+    line-height: normal;
+    padding: 40px 25px;
+    background-color: #f9f9f9; /* Можете изменить фон анкеты под дизайн сайта */
+}
+
+/* Заголовок "Анкета" */
+.form-block h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 62px; /* Большой и выразительный для шрифта Great Vibes */
+    margin-bottom: 25px;
+    text-align: center;
+    color: #002343;
+    font-weight: normal;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Вопросы и метки анкеты */
+.form-group label {
+    display: block;
+    font-family: 'Old Standard TT', serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #002343;
+}
+
+/* Поле ввода текста */
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    font-family: 'Old Standard TT', serif;
+    font-size: 16px;
+    border: 1px solid #b0c4de;
+    border-radius: 8px;
+    outline: none;
+    background-color: #fff;
+    color: #002343;
+    transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus {
+    border-color: #002343;
+}
+
+/* Радиокнопки */
+.radio-label {
+    display: flex;
+    align-items: center;
+    font-family: 'Old Standard TT', serif;
+    font-size: 17px;
+    color: #002343;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.radio-label input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Немного увеличиваем для удобства нажатия */
+    accent-color: #002343; /* Цвет радиокнопки при выборе (поддерживается современными браузерами) */
+}
+
+/* Кнопка отправки */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #002343;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Old Standard TT', serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:active {
+    background-color: #001529;
+}

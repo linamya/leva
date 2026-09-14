@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Мобильный сайт</title>
+    <!-- Подключаем шрифты Great Vibes и Old Standard TT из Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="mobile-container">
+        <!-- Блок 1 -->
+        <div class="block">
+            <img src="1.png" alt="Блок 1">
+        </div>
+
+        <!-- Блок 2 -->
+        <div class="block">
+            <img src="2.png" alt="Блок 2">
+        </div>
+
+        <!-- Блок 3 (со ссылкой) -->
+        <div class="block">
+            <a href="https://yandex.com/maps/org/holy_trinity_cathedral/1092512204/?ll=38.962953%2C45.030196&z=16" target="_blank">
+                <img src="3.png" alt="Блок 3">
+            </a>
+        </div>
+
+        <!-- Блок 4 -->
+        <div class="block">
+            <img src="4.png" alt="Блок 4">
+        </div>
+
+        <!-- Блок 5 (со ссылкой) -->
+        <div class="block">
+            <a href="https://yandex.com/maps/35/krasnodar/house/ulitsa_tsezarya_kunikova_24k1/Z0AYdgdhTUUOQFpvfXx4eH9jbA==/?ll=39.001409%2C45.099308&z=16" target="_blank">
+                <img src="5.png" alt="Блок 5">
+            </a>
+        </div>
+
+        <!-- Блок 7: Анкета -->
+        <div class="block form-block">
+            <form id="rsvpForm">
+                <h2>Анкета</h2>
+                
+                <div class="form-group">
+                    <label for="fullname">Ваше имя и фамилия</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Введите имя и фамилию" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Планируете ли вы присутствовать?</label>
+                    
+                    <label class="radio-label">
+                        <input type="radio" name="attendance" value="Только на крестины" required>
+                        Только на крестины
+                    </label>
+                    
+                    <label class="radio-label">
+                        <input type="radio" name="attendance" value="Только на ужин">
+                        Только на ужин
+                    </label>
+
+                    <label class="radio-label">
+                        <input type="radio" name="attendance" value="На крестины и ужин">
+                        На крестины и ужин
+                    </label>
+
+                    <label class="radio-label">
+                        <input type="radio" name="attendance" value="Не смогу прийти">
+                        Не смогу прийти
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
